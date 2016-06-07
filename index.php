@@ -77,7 +77,7 @@ class WeChatJustYY {
             switch ($msgType) {
                 case "event";
                     $event = $postObj->Event;
-                    $contentStr = $this->getWelcomeMessage($username);
+                    $contentStr = $this->getWelcomeMessage($fromUsername);
                     if ($event == "subscribe") {
                     } elseif ($event == "unsubscribe") {
                     }
